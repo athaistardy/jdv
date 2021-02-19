@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+* {
+    font-family: 'Comfortaa', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(91, 155, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 350px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+div {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+input {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #CCC;
+    outline: none;
+    border-radius: 5px;
+    transition: ease all 0.5s;
+    margin-top: 20px;
+}
+
+input:hover {
+    background-color: rgba(0, 128, 128,0.4);
+    border: 2px solid rgba(0, 128, 128,0.4);
+    cursor: pointer;
+}
+
+#mostrador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mostrador p {
+    margin-right: 10px;
+}
+
+#tabuleiro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.espaco {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    margin: 1px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
