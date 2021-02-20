@@ -3,7 +3,6 @@
 * {
     font-family: 'Comfortaa', Helvetica, Arial, sans-serif;
     box-sizing: border-box;
-
 }
 
 body {
@@ -17,8 +16,11 @@ body {
 header {
     width: 350px;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 section {
     width: 350px;

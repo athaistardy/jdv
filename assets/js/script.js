@@ -66,21 +66,23 @@ iniciarEspacos()
         var vencedor = ''
 
         if(( a1 == b1 && b1 == a1 && c1 == a1 && a1 != '' ) || (a1 == a2 && a1 == a3 && a1 != '' ) || (a1 == b2 && a1 == c3 && a1 != '')) {
-            vencedor = a1
+            vencedor = `O Vencedor foi o <strong style='font-size:30px;'>${a1}</strong> !!`
 
         } else if((b2 == b1 && b2 == b3 && b2 != '') || (b2 == a2 && b2 == c2 && b2 != '') || (b2 == a3 && b2 == c1 && b2 != '')) {
-            vencedor = b2
+            vencedor = `O Vencedor foi o <strong style='font-size:30px;'>${b2}</strong> !!`
 
         } else if((c3 == c2 && c3 == c1 && c3 != '') || (c3 == b3 && c3 == a3 && c3 != '')) {
-            vencedor = c3
+            vencedor = `O Vencedor foi o <strong style='font-size:30px;'>${c3}</strong> !!`
+
+        } else if(vencedor != a1 && vencedor != c2 && vencedor != b3){
+            vencedor = `<strong style='font-size:28px;'>Deu velha!</strong>`
         }
 
         if(vencedor != "") {
             var resultado = document.getElementById('resultado')
             gameOver = true
-
-            resultado.innerHTML = `O Vencedor foi o <strong style='font-size:30px;'>${vencedor}</strong> !!`
-        }
+            resultado.innerHTML = `<strong>${vencedor}</strong>`
+        } 
     }
     
    
